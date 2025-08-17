@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rubayat Rahman — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --ink:#000000;
+      --muted:#5c5f66;
+      --rule:#e9eaed;
+      --aside-bg:#8a0f4e;
+      --aside-ink:#ffffff;
+      --meta:#8a0f4e;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.35;
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+    }
+    .page{
+      max-width:1056px;
+      margin:32px auto;
+      background:#fff;
+      box-shadow:0 6px 24px rgba(16,24,40,.08);
+      border-radius:16px;
+      overflow:hidden;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+    }
+
+    .aside{
+      padding:22px;
+      background:var(--aside-bg);
+      color:var(--aside-ink);
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+    .aside .h{
+      color:var(--aside-ink);
+      border-bottom:1px solid rgba(255,255,255,.35);
+    }
+    .aside .k{ 
+      color:var(--aside-ink); 
+    }
+    .aside a{ color:var(--aside-ink); text-decoration:none }
+
+    .main{
+      display:flex;
+      flex-direction:column;
+      gap:22px;
+      padding:22px;
+      background:#fff;
+      color:#000;
+    }
+
+    .name{
+      font-family:"DM Serif Display", Georgia, serif;
+      font-size:30px;
+      line-height:1.1;
+      margin:0 0 16px 0;
+      letter-spacing:.3px;
+      color:#ffffff;
+    }
+
+    .section{margin-top:14px}
+    .section + .section{margin-top:18px}
+    .h{
+      font-weight:700;
+      letter-spacing:.3px;
+      font-size:13.5px;
+      text-transform:uppercase;
+      color:var(--muted);
+      border-bottom:1px solid var(--rule);
+      padding-bottom:8px;
+      margin-bottom:10px;
+    }
+
+    ul{margin:0; padding-left:18px}
+    li{
+      margin:6px 0;
+      text-align:justify;
+      line-height:1.55; /* increased line spacing for readability */
+    }
+    .k{font-size:13.25px; line-height:1.55;} /* increase line spacing for skills, courses, achievements */
+
+    .contact{display:grid; gap:6px; margin-top:10px}
+    .contact .item{display:flex; align-items:flex-start; gap:8px}
+
+    .job{
+      border:1px solid var(--rule);
+      border-radius:12px;
+      padding:14px 16px;
+    }
+    .job h4{margin:0 0 2px 0; font-size:16.5px}
+    .job .meta{font-size:13px; color:var(--meta); margin-bottom:8px}
+
+    .lead{
+      font-size:14.5px;
+      margin:0;
+      text-align:justify;
+      line-height:1.6;
+    }
+
+    .skills li{ font-weight:600; }
+
+    @media print{
+      body{background:#fff}
+      .page{box-shadow:none; margin:0; border-radius:0}
+      .grid{gap:0}
+      .job{page-break-inside:avoid}
+    }
+    @media (max-width:860px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="grid">
+      <aside class="aside">
+        <h1 class="name">Rubayat Rahman</h1>
+        <div class="section">
+          <div class="h">Personal details</div>
+          <div class="contact">
+            <div class="item">📧 <a href="mailto:rubaiyar13@gmail.com">rubaiyar13@gmail.com</a></div>
+            <div class="item">📞 <a href="tel:+8801303820013">+8801303820013</a></div>
+            <div class="item">📍 Nikunja, Dhaka-1229, Bangladesh</div>
+            <div class="item">🔗 <a href="https://linkedin.com/in/rubaiyar-r">linkedin.com/in/rubaiyar-r</a></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="h">Education</div>
+          <p class="k"><strong>B.Sc. in Computer Science</strong><br>
+            • Southeast University<br>
+            • Credits completed: 143
+          </p>
+          <p class="k"><strong>Diploma in Computer Technology</strong><br>
+            • GPA: 3.47/4
+          </p>
+        </div>
+
+        <div class="section">
+          <div class="h">Skills</div>
+          <ul class="k skills">
+            <li>Strategic Account and Renewal Management</li>
+            <li>Advanced Buyer Communication and Escalation Handling</li>
+            <li>Data Analysis & Insights – Tableau, Excel</li>
+            <li>Executive Business Review (EBR) Preparation</li>
+            <li>Corporate Engagement, Onboarding & Retention</li>
+            <li>Cross-Departmental Collaboration & Coordination</li>
+            <li>Customer Success & Problem-Solving</li>
+            <li>System & Data Management – Google Workspace, Microsoft 365, Notion</li>
+            <li>Renewal & Contract Management Optimization</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="h">Courses</div>
+          <ul class="k">
+            <li>Foundations of Data Analysis – Coursera</li>
+            <li>Professional & Cultural English – British Council</li>
+            <li>Aspire Leadership Program 2025 – Aspire Institute</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="h">Achievements & Highlights</div>
+          <ul class="k">
+            <li><strong>Client’s Account Management:</strong> Managed client accounts exceeding 100 for multiple years.</li>
+            <li><strong>Performance Under Pressure:</strong> Delivered consistent results in high-pressure environments with clients.</li>
+            <li><strong>Recognition:</strong> Recognized for analytical accuracy, compliance awareness, and process improvement.</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main">
+        <section class="section">
+          <div class="h">Profile</div>
+          <p class="lead">Client-focused Customer Success and Account Management professional with 5+ years of experience in B2B/B2C relationship management, proactive support, and data-driven decision-making. Proven record of managing 100+ client accounts, delivering exceptional service, and driving retention through strategic communication, compliance oversight, and operational excellence. Experienced in cross-cultural teams, including US-based clients, and proficient in CRM systems, analytics tools, and process optimization.</p>
+        </section>
+
+        <section class="section">
+          <div class="h">Employment</div>
+
+          <div class="job">
+            <h4>Assistant Manager, Business Development</h4>
+            <div class="meta">TFP Solutions Bangladesh Ltd. (Joint Venture of TFP Berhad Group) • Dhaka, Bangladesh • Jan 2023 – June 2025</div>
+            <ul>
+              <li>Managed 100+ active business accounts, providing ongoing support and resolving operational issues to ensure client satisfaction.</li>
+              <li>Analyzed market, product, and pricing data to identify trends and create actionable insights for strategic decisions.</li>
+              <li>Coordinated with cross-functional teams (Content, Design, CS, Operations, Delivery) to improve client outcomes.</li>
+              <li>Prepared detailed reports and communicated with corporate clients, including PRAN–RFL, Walton, Smart Technology, Xiaomi Bangladesh, Navana Group, and Esquire.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h4>Key Account Manager</h4>
+            <div class="meta">Alesha Mart Limited • Dhaka, Bangladesh • Jan 2021 – Dec 2022</div>
+            <ul>
+              <li>Maintained relationships with 200+ vendors, including Singer Bangladesh, Miyako, T.K. Group, and Niloy Group.</li>
+              <li>Handled vendor discussions, compliance checks, and account anomaly reporting to management.</li>
+              <li>Used CRM tools to monitor performance, track metrics, and generate actionable reports.</li>
+              <li>Supported campaign execution, ensuring consistent client communications and high engagement rates.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h4>Relationship Manager & Merchant Supervisor</h4>
+            <div class="meta">ShopUp • Dhaka, Bangladesh • Jan 2020 – Dec 2020</div>
+            <ul>
+              <li>Oversaw onboarding and management of merchants for the Mokam App, increasing merchant base by 25%.</li>
+              <li>Trained and mentored 100 ambassadors, boosting merchant sales and improving campaign impact.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h4>Business Process Officer</h4>
+            <div class="meta">MY Outsourcing Limited • Dhaka, Bangladesh • Jan 2019 – Dec 2019</div>
+            <ul>
+              <li>Handled inbound/outbound calls, resolving customer queries for Apex Footwear, Samsung, Solar System, and other local/international clients.</li>
+              <li>Managed CRM records, tracked escalations, and provided timely resolutions.</li>
+              <li>Prepared and analyzed reports to optimize process efficiency.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
